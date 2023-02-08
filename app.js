@@ -12,6 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // Register the location for handlebars partials here:
 
 // ...
@@ -19,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index.hbs');
 });
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
