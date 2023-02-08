@@ -44,4 +44,8 @@ app.get("/random-beer",(req, res)=>{
   .catch(error => console.log(error));
 })
 
+app.get("/beers/:beer", (req, res)=>{
+console.log(req.params.beer)
+})
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
