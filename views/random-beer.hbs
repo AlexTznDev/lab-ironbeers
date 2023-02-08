@@ -2,10 +2,7 @@
   <h3> probando cervezas</h3>
 
   {{#each randomBeerApi}}
-    <h2>{{this.name}}</h2>
-    <img src='{{this.image_url}}' alt='a beer' />
-    <p>{{this.description}}</p>
-    <h4>{{this.tagline}}</h4>
+    {{>beerpartial this}}
     <h2>Food Pairing</h2>
     <ul>
       {{#each food_pairing}}
